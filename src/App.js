@@ -1,4 +1,5 @@
 import "./App.css";
+import StateFull from "./Components/StateFull";
 import MyCheckbox from "./Components/checkbox";
 import Counter from "./Components/counter";
 import Counterr from "./Components/counterr";
@@ -22,6 +23,8 @@ function App() {
       <Form />
       <hr></hr>
       <Counterr />
+      <hr></hr>
+      <StateFull />
     </div>
   );
 }
