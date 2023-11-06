@@ -9,6 +9,12 @@ class KlasPromjenaState extends Component {
     const newCity = this.state.city === "Zagreb" ? "Osijek" : "Zagreb";
     this.setState({ city: newCity });
   };
+
+  //   dontChangeLikeThis = () => {
+  //     const newCity = this.state.city === "Zagreb" ? "Osijek" : "Zagreb";
+  //     this.state.city = newCity;
+  //   };
+
   render() {
     return (
       <div>
