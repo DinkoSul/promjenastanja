@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const EffectHook = () => {
   const [firstName, setFirstName] = useState("");
@@ -7,6 +7,10 @@ const EffectHook = () => {
   function handleFirstNameChange(e) {
     setFirstName(e.target.value);
   }
+  useEffect(() => {
+    // alert("Dogodila se promjena!");
+    console.log(firstName + " " + lastName);
+  }, [firstName, lastName]);
 
   return (
     <>

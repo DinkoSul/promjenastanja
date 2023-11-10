@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Zadatak = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   // const [birthYear, setbirthYear] = useState(1960);
   const [liked, setLiked] = useState(false);
+  useEffect(() => {
+    alert(firstName + " " + lastName);
+    // console.log(firstName + " " + lastName);
+  }, [liked]);
 
   function handleFirstNameChange(e) {
     setFirstName(e.target.value);

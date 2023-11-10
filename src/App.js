@@ -29,8 +29,8 @@ function App() {
       <hr></hr>
       <StateFull />
       <hr />
-      <Zadatak /> */}
-      <EffectHook />
+       <EffectHook />*/}
+      <Zadatak />
     </div>
   );
 }
